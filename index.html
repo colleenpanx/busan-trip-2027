@@ -198,7 +198,7 @@ details.fold>summary .d{font-family:var(--font-head);font-size:20px;font-weight:
 details.fold>summary .d::before{content:"＋ ";color:var(--accent)}
 details.fold[open]>summary .d::before{content:"－ "}
 details.fold>summary .s{font-size:13px;color:var(--muted)}
-details.fold>summary::after{content:"點這裡展開 ▼";align-self:flex-start;margin-top:8px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:7px 18px;border-radius:99px;border:2px solid var(--accent)}details.fold[open]>summary::after{content:"點這裡收合 ▲";background:var(--surface);color:var(--accent)}.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.vid{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;padding-bottom:12px;text-decoration:none;color:var(--fg);min-width:0}.vid:hover{border-color:var(--accent)}.vid .th{position:relative;display:block;background:var(--accent-soft)}.vid .th img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.vid .th::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:36px;border-radius:10px;background:rgba(0,0,0,.65);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center}.vid b{font-size:16px;line-height:1.4;padding:4px 14px 0}.vid small{font-size:12px;color:var(--muted);padding:0 14px}.vid .sm{font-size:14px;padding:0 14px}.hotel a.th{position:relative;display:block}.hotel a.th::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:36px;border-radius:10px;background:rgba(0,0,0,.65);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center}.vid.ig{padding-bottom:12px}.vid.ig iframe{display:block;width:100%;height:440px;border:0;background:var(--accent-soft)}.vid.ig a{margin:2px 14px 0;font-size:14px;font-weight:700;color:var(--accent)}.igs{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}details.fold>summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+details.fold>summary::after{content:"點這裡展開 ▼";align-self:flex-start;margin-top:8px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:7px 18px;border-radius:99px;border:2px solid var(--accent)}details.fold[open]>summary::after{content:"點這裡收合 ▲";background:var(--surface);color:var(--accent)}.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.vid{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;padding-bottom:12px;text-decoration:none;color:var(--fg);min-width:0}.vid:hover{border-color:var(--accent)}.vid .th{position:relative;display:block;background:var(--accent-soft)}.vid .th img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.vid .th::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:36px;border-radius:10px;background:rgba(0,0,0,.65);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center}.vid b{font-size:16px;line-height:1.4;padding:4px 14px 0}.vid small{font-size:12px;color:var(--muted);padding:0 14px}.vid .sm{font-size:14px;padding:0 14px}.hotel a.th{position:relative;display:block}.hotel a.th::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:36px;border-radius:10px;background:rgba(0,0,0,.65);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center}.duo{grid-template-columns:repeat(2,minmax(0,1fr))}.duo dd{font-family:inherit;white-space:normal}.plan a.th{position:relative;display:block;margin:-16px -18px 0;border-radius:14px 14px 0 0;overflow:hidden}.plan a.th img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--accent-soft)}.plan a.th::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:36px;border-radius:10px;background:rgba(0,0,0,.65);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center}@media (max-width:560px){.duo{gap:8px}.duo .plan{padding:10px}.duo .plan a.th{margin:-10px -10px 0}.duo .plan h3{font-size:16px}.duo .big{font-size:19px}.duo dl{grid-template-columns:1fr;gap:0}.duo dt{margin-top:5px;font-size:12px}.duo dd{text-align:left}}.vid.ig{padding-bottom:12px}.vid.ig iframe{display:block;width:100%;height:440px;border:0;background:var(--accent-soft)}.vid.ig a{margin:2px 14px 0;font-size:14px;font-weight:700;color:var(--accent)}.igs{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}details.fold>summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
 .mx .r small{display:block;font-weight:400;font-size:11px;color:var(--muted);line-height:1.3}
 .cell{min-height:56px}
@@ -419,51 +419,44 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
 </div></details>
 
 <section id="sec-plan">
-  <div><h2>建議行程：228 連假</h2><p class="sub">2/25（四）去、3/1（一）回，請 2 天假。還沒有訂任何機票或飯店。</p></div>
-  <div class="plans">
+  <div><h2>建議行程：228 連假，住宿二選一</h2><p class="sub">2/25（四）去、3/1（一）回，請 2 天假。還沒有訂任何機票或飯店。</p></div>
+  <div class="plans duo">
     <div class="plan on">
-      <h3><span class="badge">建議</span>大韓商務艙</h3>
-      <div><div class="big">每人約 TWD 48,900</div><div class="cap">2 人合計約 97,800，含稅、車資、餐費</div></div>
+      <a class="th" href="https://www.youtube.com/watch?v=-SqBH7LYvpU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/-SqBH7LYvpU/hqdefault.jpg" alt="釜山萬楓酒店標準客房，影片封面" loading="lazy"></a>
+      <h3><span class="badge">方案 A</span>釜山萬楓酒店 2 間</h3>
+      <div><div class="big">每人約 TWD 48,900</div><div class="cap">2 人合計約 97,800，含大韓商務艙、車資、餐費</div></div>
       <dl>
-        <dt>機票 2 人</dt><dd>47,606</dd>
-        <dt>飯店 4 晚，一人一間（含稅費預留）</dt><dd>27,273</dd>
-        <dt>車資、餐費、門票</dt><dd>20,000</dd>
-        <dt>保險、K-ETA、雜支</dt><dd>2,970</dd>
+        <dt>住法</dt><dd>一人一間</dd>
+        <dt>星級</dt><dd>三星（萬豪系）</dd>
+        <dt>床</dt><dd>各 1 張特大雙人床</dd>
+        <dt>房間大小</dt><dd>每間約 7 坪</dd>
+        <dt>到海邊</dt><dd>走路 300 公尺</dd>
+        <dt>游泳池、SPA</dt><dd>沒有</dd>
+        <dt>飯店 4 晚含稅費預留</dt><dd>27,273</dd>
       </dl>
-      <ul>
-        <li>17:30 去、14:50 回，平躺座椅</li>
-        <li>住釜山萬楓酒店 Fairfield（萬豪系三星），一人一間大床房</li>
-      </ul>
+      <div class="cap">圖是同大小的雙床版本，All Hotel Review 的影片封面，點圖看影片。</div>
     </div>
     <div class="plan">
-      <h3><span class="badge">可改選</span>華航商務艙</h3>
-      <div><div class="big">每人約 TWD 53,000</div><div class="cap">2 人合計約 106,100，含稅、車資、餐費</div></div>
+      <a class="th" href="https://www.youtube.com/watch?v=WrWa_HPuP2U" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/WrWa_HPuP2U/hqdefault.jpg" alt="百樂達斯釜山酒店客房，影片封面" loading="lazy"></a>
+      <h3><span class="badge">方案 B</span>百樂達斯 1 間</h3>
+      <div><div class="big">每人約 TWD 56,750</div><div class="cap">2 人合計約 113,500，含大韓商務艙、車資、餐費</div></div>
       <dl>
-        <dt>機票 2 人</dt><dd>55,852</dd>
-        <dt>飯店 4 晚，一人一間（含稅費預留）</dt><dd>27,273</dd>
-        <dt>車資、餐費、門票</dt><dd>20,000</dd>
-        <dt>保險、K-ETA、雜支</dt><dd>2,970</dd>
+        <dt>住法</dt><dd>兩人同住</dd>
+        <dt>星級</dt><dd>五星</dd>
+        <dt>床</dt><dd>2 張單人床</dd>
+        <dt>房間大小</dt><dd>約 10 坪，兩人共用</dd>
+        <dt>到海邊</dt><dd>就在海邊</dd>
+        <dt>游泳池、SPA</dt><dd>室外游泳池、SPA</dd>
+        <dt>飯店 4 晚含稅費預留</dt><dd>42,924</dd>
       </dl>
-      <ul>
-        <li>15:40 去、11:50 回，平躺座椅</li>
-        <li>早 2 小時到釜山，2 人多約 8,250</li>
-      </ul>
-    </div>
-    <div class="plan">
-      <h3><span class="badge">對照</span>春節前一週 <small>1/31 → 2/4．請 3 天假</small></h3>
-      <div><div class="big">每人約 TWD 42,500</div><div class="cap">2 人合計約 84,900，含稅、車資、餐費</div></div>
-      <dl>
-        <dt>機票 2 人（大韓商務艙）</dt><dd>47,606</dd>
-        <dt>飯店 4 晚（含稅費預留）</dt><dd>17,148</dd>
-        <dt>車資、餐費、門票</dt><dd>17,200</dd>
-        <dt>保險、K-ETA、雜支</dt><dd>2,970</dd>
-      </dl>
-      <ul>
-        <li>回來接春節，連休到 2/10</li>
-        <li>住 L7 海雲台，較平價、不含早餐</li>
-      </ul>
+      <div class="cap">圖是許佳萱 2021 年入住的影片封面，房型不一定是市景雙床房，點圖看影片。</div>
     </div>
   </div>
+  <ul class="notes">
+    <li><b>差多少</b>住百樂達斯 2 人多約 15,700，每人約 7,800。</li>
+    <li><b>怎麼選</b>想各自有房間、睡大床、省預算，選方案 A。想住海邊五星、有游泳池和 SPA，接受同房睡單人床，選方案 B。</li>
+    <li><b>機票</b>兩個方案都是大韓商務艙，2 人 47,606。改搭華航每人多約 4,100。</li>
+  </ul>
   <details class="fold" id="sec-cost"><summary><span class="d">費用明細：每一項怎麼算的</span><span class="s">機票、住宿、車資、餐費各項的算法與可靠度</span></summary><div class="body" style="gap:14px;padding-top:14px">
   <p class="sub">把機票、住宿、Uber 或計程車、餐費和稅費都先算進去。韓元以 1,000 韓元約新台幣 23.5 元換算。</p>
   <div class="wrap"><table>
@@ -585,7 +578,7 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
       <tr><td>房價 4 晚</td><td class="n">24,794</td><td class="n">32,984</td><td class="n">43,717</td><td class="n">39,022</td></tr>
       <tr class="hi"><td>加 10% 稅費預留</td><td class="n">27,273</td><td class="n">36,282</td><td class="n">48,089</td><td class="n">42,924</td></tr>
       <tr><td>床型</td><td>每間 1 張特大雙人床</td><td>每間 1 張加大雙人床</td><td>1 張雙人床加 1 張單人床</td><td>2 張單人床</td></tr>
-      <tr><td>房間大小</td><td>每間 23 平方公尺，約 7 坪</td><td>Booking.com 沒有標示</td><td>29 平方公尺，約 8.8 坪，兩人共用</td><td>沒查</td></tr>
+      <tr><td>房間大小</td><td>每間 23 平方公尺，約 7 坪</td><td>Booking.com 沒有標示</td><td>29 平方公尺，約 8.8 坪，兩人共用</td><td>33 平方公尺，約 10 坪，兩人共用</td></tr>
       <tr><td>住客評分</td><td>8.3（726 則）</td><td>8.2（113 則）</td><td>9.0（442 則）</td><td>9.0（715 則）</td></tr>
       <tr><td>游泳池、SPA</td><td>沒有</td><td>沒有</td><td>2 個游泳池</td><td>室外游泳池、SPA</td></tr>
       <tr><td>其他設施</td><td>健身中心、洗衣、館內停車</td><td>免費停車、家庭房</td><td>健身中心、3 間餐廳、酒吧、客房服務</td><td>健身中心、酒吧、客房服務</td></tr>
