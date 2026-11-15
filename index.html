@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <style>:root{color-scheme:light;box-sizing:border-box}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>媽媽 70 歲釜山之旅</title>
+<title>2027 韓國行</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
 <style>
@@ -138,6 +138,10 @@ a{color:var(--accent)}
 ul.notes{margin:0;padding:0;list-style:none;display:grid;gap:8px}
 ul.notes li{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:10px 14px;font-size:14px}
 ul.notes b{color:var(--accent)}
+.fz{flex:none;display:inline-flex;align-items:center;gap:4px;border:1px solid var(--gold);border-radius:99px;padding:2px 4px 2px 12px;background:var(--gold-soft)}
+.fz .fzl{font-size:13px;font-weight:700;color:var(--gold-ink)}
+.steps .fz button{padding:4px 12px;border:0;background:transparent;color:var(--gold-ink);font-weight:700}
+.steps .fz button[aria-pressed="true"]{background:var(--gold);color:#3b2a00}
 .hotels{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
 .hotel{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
 .hotel img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--accent-soft)}
@@ -241,14 +245,15 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
     <g fill="#0b2a73"><circle cx="372" cy="116" r="3"/><circle cx="354" cy="116" r="3"/><circle cx="336" cy="116" r="3"/><circle cx="318" cy="116" r="3"/></g>
   </svg>
   <div class="hero-in">
-    <div class="eyebrow">定案：228 連假 · 釜山 5 天 4 晚 · 2/25 到 3/1</div>
-    <h1>媽媽 70 歲之旅：228 連假釜山行</h1>
+    <div class="eyebrow">釜山 5 天 4 晚 · 228 連假 · 2/25 到 3/1</div>
+    <h1>2027 韓國行</h1>
     <p>媽媽的 70 歲之旅，我和媽媽 2 人，2027/2/25（四）去、3/1（一）回，請 2 天假，搭大韓商務艙直飛。最前面是各日期的比價（含 228 連假），接著是定案行程。價格是 2026/11/13 到 11/15 查的。</p>
   </div>
 </header>
 
 <nav class="steps" aria-label="頁面導覽（固定在頁面上方）"><div class="steps-in">
   <button type="button" class="top" id="to-top">↑ 頂端</button>
+  <span class="fz" role="group" aria-label="字體大小"><span class="fzl">字體</span><button type="button" data-z="1">標準</button><button type="button" data-z="1.25">大</button><button type="button" data-z="1.5">特大</button></span>
   <a href="#sec-data"><b>1</b>詳細比價資料</a>
   <a href="#sec-plan"><b>2</b>定案行程</a>
   <a href="#sec-cal"><b>3</b>假期與請假</a>
@@ -1395,6 +1400,8 @@ function openFold(el){var d=el&&el.closest&&el.closest('details');if(d)d.open=tr
 document.querySelectorAll('.steps a').forEach(function(a){a.addEventListener('click',function(){var el=document.querySelector(a.getAttribute('href'));if(el&&el.tagName==='DETAILS')el.open=true;else openFold(el)})});
 labelTables(document);
 (function(){var o=document.getElementById('open-all'),c=document.getElementById('close-all');function all(v){document.querySelectorAll('#days details').forEach(function(d){d.open=v})}if(o)o.addEventListener('click',function(){all(true)});if(c)c.addEventListener('click',function(){all(false)})})();
+(function(){var bs=document.querySelectorAll('.fz button');function set(z){document.body.style.zoom=z;bs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.z)===String(z)?'true':'false')});try{localStorage.setItem('fz',z)}catch(e){}}
+var z='1';try{z=localStorage.getItem('fz')||'1'}catch(e){}set(z);bs.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.z)})})})();
 /* ---------- 導覽列 ---------- */
 (function(){
   var tt=document.getElementById('to-top');
