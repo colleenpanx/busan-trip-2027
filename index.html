@@ -189,8 +189,8 @@ details.day>.body{padding:0 16px 12px}
 @media(max-width:520px){.tl li{grid-template-columns:1fr;gap:0}}
 #sec-plan{font-size:16px}
 #sec-plan table{font-size:16px}
-#sec-plan ul.notes li{font-size:16px}
-#sec-plan ul.notes b{margin-right:8px}#sec-plan ul.notes{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.plan h3 .badge{padding:2px 12px;font-size:13px;align-self:center}
+#sec-prep ul.notes li{font-size:16px}
+#sec-prep ul.notes b{margin-right:8px}#sec-prep ul.notes{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.plan h3 .badge{padding:2px 12px;font-size:13px;align-self:center}
 details.fold{background:transparent;scroll-margin-top:72px}
 details.fold>summary{cursor:pointer;list-style:none;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
 details.fold>summary::-webkit-details-marker{display:none}
@@ -255,6 +255,7 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
   <button type="button" class="top" id="to-top">↑ 頂端</button>
   <span class="fz" role="group" aria-label="字體大小"><span class="fzl">字體</span><button type="button" data-z="1">標準</button><button type="button" data-z="1.25">大</button><button type="button" data-z="1.5">特大</button></span>
   <a href="#sec-flight"><b>✈</b>飛行時間</a>
+  <a href="#sec-prep"><b>☀</b>氣候與注意</a>
   <a href="#sec-data"><b>1</b>詳細比價資料</a>
   <a href="#sec-plan"><b>2</b>建議行程</a>
   <a href="#sec-video"><b>3</b>影片與 IG</a>
@@ -273,6 +274,26 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
     <div class="card"><div class="k">時差</div><div class="v">韓國快 1 小時</div><div class="d">台灣中午 12 點是韓國下午 1 點，手機會自動調整</div></div>
   </div>
   <p class="sub">飛行時間是用 Google 航班的表定起降時刻、扣掉 1 小時時差算出來的，實際會因風向與航管略有增減。若改搭華航，去程 15:40 起飛、18:50 抵達，同樣約 2 小時 10 分。</p>
+</section>
+
+<section id="sec-prep">
+  <div><h2>氣候與注意事項</h2><p class="sub">2 月底到 3 月初的釜山還是冬天尾巴，比台灣冷很多，但雨不多、空氣偏乾。</p></div>
+  <div class="cards">
+    <div class="card"><div class="k">氣溫</div><div class="v">約 2 到 12°C</div><div class="d">2 月平均高溫 10.2°C、低溫 1.5°C；3 月平均高溫 13.8°C、低溫 5.3°C</div></div>
+    <div class="card"><div class="k">降雨</div><div class="v">雨天不多</div><div class="d">2 月平均約 6 天有降水、雨量約 50 毫米，偶爾下雪（平均約 1 天）</div></div>
+    <div class="card"><div class="k">濕度</div><div class="v">偏乾，約 49%</div><div class="d">比台灣乾很多，皮膚和嘴唇容易乾</div></div>
+  </div>
+  <ul class="notes">
+    <li><b>穿著</b>洋蔥式穿法：保暖內層、毛衣、羽絨或厚外套，加圍巾、手套、帽子。室內暖氣強，要方便穿脫。</li>
+    <li><b>海邊風大</b>海雲台、龍宮寺、膠囊列車都在海邊，體感比氣溫更冷，外套要能擋風。</li>
+    <li><b>鞋子</b>穿防滑好走的包鞋。龍宮寺是石階，濕了會滑。</li>
+    <li><b>保濕</b>帶乳液、護唇膏，多喝水。</li>
+    <li><b>交通</b>全程計程車，不搭地鐵。只有海東龍宮寺有約 108 階，可分段走。</li>
+    <li><b>步調</b>每天最多 2 個點，下午回飯店休息。</li>
+    <li><b>行前</b>確認 K-ETA、填電子入境卡、買旅平險。</li>
+    <li><b>插座</b>韓國是 220V 圓孔雙腳插座，台灣的扁插頭要帶轉接頭。</li>
+  </ul>
+  <p class="sub">氣溫、降雨與濕度是釜山 1991 到 2020 年的月平均（韓國氣象廳資料，取自維基百科的整理表），實際天氣出發前一週再看預報。穿著與保濕是我依這些數字給的建議。更多細節在下面的「同行注意事項」。</p>
 </section>
 
 <details class="fold" id="sec-data"><summary><span class="d">詳細比價資料</span><span class="s">228 連假、春節與 1 到 3 月票價，全年商務艙、機型座椅與禮遇。經濟艙只列價格。</span></summary><div class="body">
@@ -443,12 +464,6 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
       </ul>
     </div>
   </div>
-  <ul class="notes">
-    <li><b>飛行</b>去程約 2 小時 15 分、回程約 2 小時 40 分，座位可躺平。</li>
-    <li><b>交通</b>全程計程車。只有海東龍宮寺有約 108 階，可分段走。</li>
-    <li><b>步調</b>每天最多 2 個點，下午回飯店休息。</li>
-    <li><b>行前</b>確認 K-ETA、填電子入境卡、買旅平險。</li>
-  </ul>
   <details class="fold" id="sec-cost"><summary><span class="d">費用明細：每一項怎麼算的</span><span class="s">機票、住宿、車資、餐費各項的算法與可靠度</span></summary><div class="body" style="gap:14px;padding-top:14px">
   <p class="sub">把機票、住宿、Uber 或計程車、餐費和稅費都先算進去。韓元以 1,000 韓元約新台幣 23.5 元換算。</p>
   <div class="wrap"><table>
