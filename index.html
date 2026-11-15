@@ -198,7 +198,7 @@ details.fold>summary .d{font-family:var(--font-head);font-size:20px;font-weight:
 details.fold>summary .d::before{content:"＋ ";color:var(--accent)}
 details.fold[open]>summary .d::before{content:"－ "}
 details.fold>summary .s{font-size:13px;color:var(--muted)}
-details.fold>summary::after{content:"點這裡展開 ▼";align-self:flex-start;margin-top:8px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:7px 18px;border-radius:99px;border:2px solid var(--accent)}details.fold[open]>summary::after{content:"點這裡收合 ▲";background:var(--surface);color:var(--accent)}.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.vid{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;padding-bottom:12px;text-decoration:none;color:var(--fg);min-width:0}.vid:hover{border-color:var(--accent)}.vid .th{position:relative;display:block;background:var(--accent-soft)}.vid .th img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.vid .th::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:36px;border-radius:10px;background:rgba(0,0,0,.65);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center}.vid b{font-size:16px;line-height:1.4;padding:4px 14px 0}.vid small{font-size:12px;color:var(--muted);padding:0 14px}.vid .sm{font-size:14px;padding:0 14px}details.fold>summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+details.fold>summary::after{content:"點這裡展開 ▼";align-self:flex-start;margin-top:8px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:7px 18px;border-radius:99px;border:2px solid var(--accent)}details.fold[open]>summary::after{content:"點這裡收合 ▲";background:var(--surface);color:var(--accent)}.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.vid{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;padding-bottom:12px;text-decoration:none;color:var(--fg);min-width:0}.vid:hover{border-color:var(--accent)}.vid .th{position:relative;display:block;background:var(--accent-soft)}.vid .th img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.vid .th::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:36px;border-radius:10px;background:rgba(0,0,0,.65);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center}.vid b{font-size:16px;line-height:1.4;padding:4px 14px 0}.vid small{font-size:12px;color:var(--muted);padding:0 14px}.vid .sm{font-size:14px;padding:0 14px}.vid.ig{padding-bottom:12px}.vid.ig iframe{display:block;width:100%;height:440px;border:0;background:var(--accent-soft)}.vid.ig a{margin:2px 14px 0;font-size:14px;font-weight:700;color:var(--accent)}.igs{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}details.fold>summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
 .mx .r small{display:block;font-weight:400;font-size:11px;color:var(--muted);line-height:1.3}
 .cell{min-height:56px}
@@ -254,15 +254,26 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
 <nav class="steps" aria-label="頁面導覽（固定在頁面上方）"><div class="steps-in">
   <button type="button" class="top" id="to-top">↑ 頂端</button>
   <span class="fz" role="group" aria-label="字體大小"><span class="fzl">字體</span><button type="button" data-z="1">標準</button><button type="button" data-z="1.25">大</button><button type="button" data-z="1.5">特大</button></span>
+  <a href="#sec-flight"><b>✈</b>飛行時間</a>
   <a href="#sec-data"><b>1</b>詳細比價資料</a>
   <a href="#sec-plan"><b>2</b>建議行程</a>
-  <a href="#sec-video"><b>3</b>介紹影片</a>
+  <a href="#sec-video"><b>3</b>影片與 IG</a>
   <a href="#sec-trip"><b>5</b>每日行程與住宿</a>
   <a href="#sec-mom"><b>6</b>同行注意事項</a>
   <a href="#sec-notes"><b>7</b>資料說明與備註</a>
 </div></nav>
 
 <main>
+
+<section id="sec-flight">
+  <div><h2>飛行時間</h2><p class="sub">桃園直飛釜山金海，單程不到 3 小時。下面的時刻都是當地時間。</p></div>
+  <div class="cards">
+    <div class="card"><div class="k">去程：桃園 → 釜山</div><div class="v">2 小時 15 分</div><div class="d">大韓 KE 2086，17:30 起飛、20:45 抵達（韓國時間）</div></div>
+    <div class="card"><div class="k">回程：釜山 → 桃園</div><div class="v">2 小時 40 分</div><div class="d">大韓 KE 2085，14:50 起飛（韓國時間）、16:30 抵達</div></div>
+    <div class="card"><div class="k">時差</div><div class="v">韓國快 1 小時</div><div class="d">台灣中午 12 點是韓國下午 1 點，手機會自動調整</div></div>
+  </div>
+  <p class="sub">飛行時間是用 Google 航班的表定起降時刻、扣掉 1 小時時差算出來的，實際會因風向與航管略有增減。若改搭華航，去程 15:40 起飛、18:50 抵達，同樣約 2 小時 10 分。</p>
+</section>
 
 <details class="fold" id="sec-data"><summary><span class="d">詳細比價資料</span><span class="s">228 連假、春節與 1 到 3 月票價，全年商務艙、機型座椅與禮遇。經濟艙只列價格。</span></summary><div class="body">
 <section id="sec-overview">
@@ -465,7 +476,7 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
 </section>
 
 <section id="sec-video">
-  <div><h2>介紹影片：最近 6 個月的中文釜山影片</h2><p class="sub">都是 2026 年 6 月以後上架、講中文的 YouTube 影片，點圖片會開 YouTube。摘要是依影片標題與說明欄整理的，我沒有逐支看完。</p></div>
+  <div><h2>介紹影片與 IG：最近 6 個月的中文釜山內容</h2><p class="sub">都是 2026 年 6 月以後上架、講中文的 YouTube 影片，點圖片會開 YouTube。摘要是依影片標題與說明欄整理的，我沒有逐支看完。</p></div>
   <div class="vids">
     <a class="vid" href="https://www.youtube.com/watch?v=fg3ezkjZqcM" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/fg3ezkjZqcM/hqdefault.jpg" alt="影片預覽圖：頭城小夫妻帶爸媽玩釜山" loading="lazy"></span><b>第一次帶爸媽玩釜山，一日遊加天空膠囊列車</b><small>頭城小夫妻．2026 年 10 月．38 分鐘</small><span class="sm">和我們的行程最像。一天跟一日遊團（五六島、膠囊列車、白淺灘、甘川），其餘走海雲台、廣安里、新世界百貨、釜山塔。片尾談跟團適不適合帶爸媽。</span></a>
     <a class="vid" href="https://www.youtube.com/watch?v=lmtNGDL5XaY" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/lmtNGDL5XaY/hqdefault.jpg" alt="影片預覽圖：Joan 小日子海雲台行程" loading="lazy"></span><b>住海雲台怎麼玩：龍宮寺、海岸列車、Spa Land</b><small>Joan 小日子．2026 年 8 月．22 分鐘</small><span class="sm">幾乎就是我們第 2、3 天要去的地方：海東龍宮寺、海岸列車、青沙浦、海雲台傳統市場、Spa Land 汗蒸幕，另有海景飯店開箱。</span></a>
@@ -473,6 +484,16 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
     <a class="vid" href="https://www.youtube.com/watch?v=Sx5zyzW7c4M" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/Sx5zyzW7c4M/hqdefault.jpg" alt="影片預覽圖：毛毛出沒中帶長輩去釜山" loading="lazy"></span><b>帶長輩去釜山的第一天：豬肉湯飯與飯店開箱</b><small>毛毛出沒中．2026 年 10 月．9 分鐘</small><span class="sm">帶媽媽和婆婆同行。帶長輩搭地鐵、西面吃松亭三代豬肉湯飯、開箱有四張床的房間，片尾提醒韓國禁止攜帶的藥品。</span></a>
     <a class="vid" href="https://www.youtube.com/watch?v=XEkBwYVrWOc" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/XEkBwYVrWOc/hqdefault.jpg" alt="影片預覽圖：天母小貓釜山行前攻略" loading="lazy"></span><b>行前準備：機場交通、Uber、包車、換錢</b><small>天母小貓．2026 年 10 月．14 分鐘</small><span class="sm">實用篇。我們全程搭車，Uber、包車與換錢這幾段最有用，另有轉接頭、金海機場和伴手禮介紹。</span></a>
     <a class="vid" href="https://www.youtube.com/watch?v=_Dv0qR2BLGM" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/_Dv0qR2BLGM/hqdefault.jpg" alt="影片預覽圖：格林童話釜山景點評比" loading="lazy"></span><b>玩了 5 天 4 夜，最推薦和最不推薦的景點</b><small>格林童話．2026 年 6 月．19 分鐘</small><span class="sm">出發前篩選景點用。說明欄提醒膠囊列車要一個月前先訂，才搶得到好時段。</span></a>
+  </div>
+  <h3>Instagram 貼文與短影片</h3>
+  <p class="sub">都是近 6 個月內、中文的貼文，下面直接顯示 Instagram 的預覽，點進去可看完整內容。上架時間是 Google 搜尋結果顯示的；摘要依貼文說明文字整理。</p>
+  <div class="vids igs">
+    <div class="vid ig"><iframe src="https://www.instagram.com/p/Da0Twb0Jnw5/embed/" title="Instagram 預覽：海雲台一日行程" loading="lazy" scrolling="no" allowtransparency="true"></iframe><b>海雲台一日行程，附時間軸</b><small>enjoylifestyle.yolo．2026 年 7 月．短影片</small><span class="sm">部分路段搭計程車。提醒膠囊列車先在官網買票、提早到場，上車處在二樓。</span><a href="https://www.instagram.com/reel/Da0Twb0Jnw5/" target="_blank" rel="noopener">在 Instagram 開啟</a></div>
+    <div class="vid ig"><iframe src="https://www.instagram.com/p/DbBVOBbNC6p/embed/" title="Instagram 預覽：釜山 6 天 5 夜攻略" loading="lazy" scrolling="no" allowtransparency="true"></iframe><b>釜山 6 天 5 夜攻略（下）</b><small>a1b2c3838．約 3 個月前．短影片</small><span class="sm">第 4 天在海雲台：膠囊列車、青沙浦、海岸列車、傳統市場、海鮮刀削麵。也提到請業者把行李送到機場。</span><a href="https://www.instagram.com/reel/DbBVOBbNC6p/" target="_blank" rel="noopener">在 Instagram 開啟</a></div>
+    <div class="vid ig"><iframe src="https://www.instagram.com/p/DemRHo1mpoW/embed/" title="Instagram 預覽：和家人同遊釜山" loading="lazy" scrolling="no" allowtransparency="true"></iframe><b>和阿姨、姊姊同遊釜山的照片集</b><small>oyeee_daily．約 1 個月前．照片</small><span class="sm">海東龍宮寺、膠囊列車、松島纜車、甘川。作者沒先訂到膠囊列車，一早去現場才買到 11 點的票。</span><a href="https://www.instagram.com/p/DemRHo1mpoW/" target="_blank" rel="noopener">在 Instagram 開啟</a></div>
+    <div class="vid ig"><iframe src="https://www.instagram.com/p/DZkGchoSnRn/embed/" title="Instagram 預覽：釜山住哪裡" loading="lazy" scrolling="no" allowtransparency="true"></iframe><b>來釜山要住哪裡</b><small>st66_kr．約 5 個月前．短影片</small><span class="sm">把住宿分成市區、海雲台、西面三區來比較，留言區有很多人分享住過的地方。</span><a href="https://www.instagram.com/reel/DZkGchoSnRn/" target="_blank" rel="noopener">在 Instagram 開啟</a></div>
+    <div class="vid ig"><iframe src="https://www.instagram.com/p/DafLOyktXBr/embed/" title="Instagram 預覽：海雲台一日行程" loading="lazy" scrolling="no" allowtransparency="true"></iframe><b>50 秒看海雲台一日</b><small>ellie.hada．約 4 個月前．短影片</small><span class="sm">青沙浦的蜂蜜吐司咖啡店、膠囊列車青沙浦站、Grand Josun Busan 的展覽。內含保養品宣傳。</span><a href="https://www.instagram.com/reel/DafLOyktXBr/" target="_blank" rel="noopener">在 Instagram 開啟</a></div>
+    <div class="vid ig"><iframe src="https://www.instagram.com/p/DeGQBhnnzai/embed/" title="Instagram 預覽：帶爸媽玩釜山" loading="lazy" scrolling="no" allowtransparency="true"></iframe><b>第一次帶爸媽玩釜山（精華）</b><small>liangvanlife（頭城小夫妻）．2026 年 10 月前後．貼文</small><span class="sm">上面第一支 YouTube 影片的精華版：海雲台、廣安里、甘川、釜山塔，以及跟團一日遊的心得。</span><a href="https://www.instagram.com/p/DeGQBhnnzai/" target="_blank" rel="noopener">在 Instagram 開啟</a></div>
   </div>
 </section>
 
