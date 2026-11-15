@@ -190,7 +190,7 @@ details.day>.body{padding:0 16px 12px}
 #sec-plan{font-size:16px}
 #sec-plan table{font-size:16px}
 #sec-plan ul.notes li{font-size:16px}
-#sec-plan ul.notes b{display:block}
+#sec-plan ul.notes b{margin-right:8px}#sec-plan ul.notes{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.plan h3 .badge{padding:2px 12px;font-size:13px;align-self:center}
 details.fold{background:transparent;scroll-margin-top:72px}
 details.fold>summary{cursor:pointer;list-style:none;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
 details.fold>summary::-webkit-details-marker{display:none}
@@ -247,7 +247,7 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
   <div class="hero-in">
     <div class="eyebrow">釜山 5 天 4 晚 · 228 連假 · 2/25 到 3/1</div>
     <h1>2027 韓國行</h1>
-    <p>媽媽的 70 歲之旅，我和媽媽 2 人，2027/2/25（四）去、3/1（一）回，請 2 天假，搭大韓商務艙直飛。最前面是各日期的比價（含 228 連假），接著是定案行程。價格是 2026/11/13 到 11/15 查的。</p>
+    <p>媽媽的 70 歲之旅，我和媽媽 2 人，2027/2/25（四）去、3/1（一）回，請 2 天假，搭大韓商務艙直飛。最前面是各日期的比價（含 228 連假），接著是建議行程。價格是 2026/11/13 到 11/15 查的。</p>
   </div>
 </header>
 
@@ -255,7 +255,7 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
   <button type="button" class="top" id="to-top">↑ 頂端</button>
   <span class="fz" role="group" aria-label="字體大小"><span class="fzl">字體</span><button type="button" data-z="1">標準</button><button type="button" data-z="1.25">大</button><button type="button" data-z="1.5">特大</button></span>
   <a href="#sec-data"><b>1</b>詳細比價資料</a>
-  <a href="#sec-plan"><b>2</b>定案行程</a>
+  <a href="#sec-plan"><b>2</b>建議行程</a>
   <a href="#sec-cal"><b>3</b>假期與請假</a>
   <a href="#sec-trip"><b>4</b>每日行程與住宿</a>
   <a href="#sec-mom"><b>5</b>同行注意事項</a>
@@ -387,83 +387,58 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
 </div></details>
 
 <section id="sec-plan">
-  <div><h2>定案行程：228 連假 <small>最新</small></h2><p class="sub">這是目前選定的方案。還沒有訂任何機票或飯店。</p></div>
+  <div><h2>建議行程：228 連假</h2><p class="sub">2/25（四）去、3/1（一）回，請 2 天假。還沒有訂任何機票或飯店。</p></div>
   <div class="plans">
     <div class="plan on">
-      <h3>已選定：228 連假．大韓商務艙 <small>2/25（四）→ 3/1（一）　請 2 天假</small></h3>
-      <div><div class="big">每人約 TWD 56,750</div><div class="cap">平均每人（含稅、含預估車資與餐費）。2 人合計約 TWD 113,500</div></div>
+      <h3><span class="badge">建議</span>大韓商務艙</h3>
+      <div><div class="big">每人約 TWD 56,750</div><div class="cap">2 人合計約 113,500，含稅、車資、餐費</div></div>
       <dl>
-        <dt>機票（大韓商務艙，含稅，每人 23,803）</dt><dd>TWD 47,606</dd>
-        <dt>飯店 4 晚（百樂達斯釜山酒店，雙床房同住）</dt><dd>TWD 39,022</dd>
-        <dt>飯店稅費預留（房價 10%）</dt><dd>TWD 3,902</dd>
-        <dt>Uber 車資（約 ₩270,000）</dt><dd>TWD 6,300</dd>
-        <dt>餐費（約 ₩470,000，含早餐）</dt><dd>TWD 11,000</dd>
-        <dt>門票與體驗（約 ₩115,000）</dt><dd>TWD 2,700</dd>
-        <dt>旅遊平安險</dt><dd>TWD 1,500</dd>
-        <dt>K-ETA（約 ₩20,000，若續免則不用）</dt><dd>TWD 470</dd>
-        <dt>網路與雜支</dt><dd>TWD 1,000</dd>
+        <dt>機票 2 人</dt><dd>47,606</dd>
+        <dt>飯店 4 晚（含稅費預留）</dt><dd>42,924</dd>
+        <dt>車資、餐費、門票</dt><dd>20,000</dd>
+        <dt>保險、K-ETA、雜支</dt><dd>2,970</dd>
       </dl>
-      <div class="line"><span>已查到 TWD 86,628</span><span>估算 TWD 26,872</span></div>
       <ul>
-        <li>連假商務艙沒有加價，A321neo 平躺式座椅</li>
-        <li>五星級海邊飯店，兩張單人床，可免費取消</li>
-        <li>2 月底仍冷，遇韓國三一節，週末人潮較多</li>
+        <li>17:30 去、14:50 回，平躺座椅</li>
+        <li>百樂達斯酒店，海邊五星、兩張單人床</li>
       </ul>
-      <span class="badge">目前的方案</span>
     </div>
     <div class="plan">
-      <h3>另一組：228 連假．華航商務艙 <small>2/25（四）→ 3/1（一）　請 2 天假</small></h3>
-      <div><div class="big">每人約 TWD 60,900</div><div class="cap">平均每人（含稅、含預估車資與餐費）。2 人合計約 TWD 121,700</div></div>
+      <h3><span class="badge">可改選</span>華航商務艙</h3>
+      <div><div class="big">每人約 TWD 60,900</div><div class="cap">2 人合計約 121,700，含稅、車資、餐費</div></div>
       <dl>
-        <dt>機票（華航商務艙，含稅，每人 27,926）</dt><dd>TWD 55,852</dd>
-        <dt>飯店 4 晚（百樂達斯釜山酒店，雙床房同住）</dt><dd>TWD 39,022</dd>
-        <dt>飯店稅費預留（房價 10%）</dt><dd>TWD 3,902</dd>
-        <dt>Uber 車資（約 ₩270,000）</dt><dd>TWD 6,300</dd>
-        <dt>餐費（約 ₩470,000，含早餐）</dt><dd>TWD 11,000</dd>
-        <dt>門票與體驗（約 ₩115,000）</dt><dd>TWD 2,700</dd>
-        <dt>旅遊平安險</dt><dd>TWD 1,500</dd>
-        <dt>K-ETA（約 ₩20,000，若續免則不用）</dt><dd>TWD 470</dd>
-        <dt>網路與雜支</dt><dd>TWD 1,000</dd>
+        <dt>機票 2 人</dt><dd>55,852</dd>
+        <dt>飯店 4 晚（含稅費預留）</dt><dd>42,924</dd>
+        <dt>車資、餐費、門票</dt><dd>20,000</dd>
+        <dt>保險、K-ETA、雜支</dt><dd>2,970</dd>
       </dl>
-      <div class="line"><span>已查到 TWD 94,874</span><span>估算 TWD 26,872</span></div>
       <ul>
-        <li>去程 CI 186　15:40→18:50，晚餐前到釜山，比大韓早約 2 小時入住</li>
-        <li>回程 CI 189　11:50→13:30；想多玩半天可改 CI 187　19:50→21:30，查到的價格相同</li>
-        <li>A321neo 平躺式座椅。桃園用華航自己的貴賓室，有淋浴間</li>
-        <li>2 人比大韓多約 8,250。回程在釜山用哪一間貴賓室沒查到</li>
+        <li>15:40 去、11:50 回，平躺座椅</li>
+        <li>早 2 小時到釜山，2 人多約 8,250</li>
       </ul>
-      <span class="badge">可以改選</span>
     </div>
     <div class="plan">
-      <h3>對照：春節前一週．大韓商務艙 <small>1/31（日）→ 2/4（四）　請 3 天假</small></h3>
-      <div><div class="big">每人約 TWD 42,500</div><div class="cap">平均每人（含稅、含預估車資與餐費）。2 人合計約 TWD 84,900</div></div>
+      <h3><span class="badge">對照</span>春節前一週 <small>1/31 → 2/4．請 3 天假</small></h3>
+      <div><div class="big">每人約 TWD 42,500</div><div class="cap">2 人合計約 84,900，含稅、車資、餐費</div></div>
       <dl>
-        <dt>機票（大韓商務艙，含稅，每人 23,803）</dt><dd>TWD 47,606</dd>
-        <dt>飯店 4 晚（L7 海雲台雙床房，不含早餐）</dt><dd>TWD 15,589</dd>
-        <dt>飯店稅費預留（房價 10%）</dt><dd>TWD 1,559</dd>
-        <dt>Uber 車資（約 ₩270,000）</dt><dd>TWD 6,300</dd>
-        <dt>餐費（約 ₩350,000，早餐另計）</dt><dd>TWD 8,200</dd>
-        <dt>門票與體驗（約 ₩115,000）</dt><dd>TWD 2,700</dd>
-        <dt>旅遊平安險</dt><dd>TWD 1,500</dd>
-        <dt>K-ETA（約 ₩20,000，若續免則不用）</dt><dd>TWD 470</dd>
-        <dt>網路與雜支</dt><dd>TWD 1,000</dd>
+        <dt>機票 2 人（大韓商務艙）</dt><dd>47,606</dd>
+        <dt>飯店 4 晚（含稅費預留）</dt><dd>17,148</dd>
+        <dt>車資、餐費、門票</dt><dd>17,200</dd>
+        <dt>保險、K-ETA、雜支</dt><dd>2,970</dd>
       </dl>
-      <div class="line"><span>已查到 TWD 63,195</span><span>估算 TWD 21,729</span></div>
       <ul>
-        <li>回來接春節，從 1/30 連休到 2/10</li>
-        <li>多請 1 天假，飯店貴約 6,400</li>
-        <li>便宜的 Mipo Oceanside 這週沒查到價格</li>
+        <li>回來接春節，連休到 2/10</li>
+        <li>住 L7 海雲台，較平價、不含早餐</li>
       </ul>
-      <span class="badge">沒有採用</span>
     </div>
   </div>
   <ul class="notes">
-    <li><b>飛多久</b>去程約 2 小時 15 分，回程約 2 小時 40 分，座位可以放平躺著休息。</li>
-    <li><b>走路與樓梯</b>全程搭計程車，不搭地鐵。只有第 2 天的海東龍宮寺有約 108 階石階，可以分段慢慢走，下雨就不下去。</li>
-    <li><b>步調</b>每天最多去 2 個地方，下午回飯店休息。第 1 天和第 5 天只有搭飛機。</li>
-    <li><b>出發前要辦</b>12 月底確認韓國入境是否要先申請 K-ETA，出發前線上填電子入境卡，買旅遊平安險。</li>
+    <li><b>飛行</b>去程約 2 小時 15 分、回程約 2 小時 40 分，座位可躺平。</li>
+    <li><b>交通</b>全程計程車。只有海東龍宮寺有約 108 階，可分段走。</li>
+    <li><b>步調</b>每天最多 2 個點，下午回飯店休息。</li>
+    <li><b>行前</b>確認 K-ETA、填電子入境卡、買旅平險。</li>
   </ul>
-  <h3>費用明細：每一項怎麼算的</h3>
+  <details class="fold" id="sec-cost"><summary><span class="d">費用明細：每一項怎麼算的</span><span class="s">點開看機票、住宿、車資、餐費各項的算法與可靠度</span></summary><div class="body" style="gap:14px;padding-top:14px">
   <p class="sub">把機票、住宿、Uber 或計程車、餐費和稅費都先算進去。韓元以 1,000 韓元約新台幣 23.5 元換算。</p>
   <div class="wrap"><table>
     <thead><tr><th>項目</th><th>2 人金額（新台幣）</th><th>怎麼算的</th><th>可靠度</th></tr></thead>
@@ -485,6 +460,7 @@ details.fold>.body{display:flex;flex-direction:column;gap:44px;padding-top:28px}
     <li>匯率是估的。台灣銀行 10/5 的韓元現金牌告是買入 0.02195、賣出 0.02585，我取中間偏高的 0.0235，沒有查今天的匯率。</li>
     <li>車資和餐費抓得偏寬。想更準，出發前用 Uber 或 Kakao T 輸入起訖點就能看到預估車資。</li>
   </ul></div>
+  </div></details>
   <div class="pills"><a class="pill" href="#sec-trip" style="text-decoration:none">看完整行程、飯店與車資</a><a class="pill" href="#sec-mom" style="text-decoration:none">與媽媽同行的注意事項</a></div>
 </section>
 
